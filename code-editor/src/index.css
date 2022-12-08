@@ -66,3 +66,9 @@ code {
   border-bottom-left-radius: .5rem;
   overflow: hidden;
 }
+.flex-parent{
+   display: flex;
+}
+.jc-center{
+  justify-content: center;
+}
