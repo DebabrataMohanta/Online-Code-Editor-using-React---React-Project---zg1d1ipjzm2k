@@ -2,13 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Editor from './Editor'
 import useLocalStorage from '../hooks/useLocalStorage'
 
-
 function App() {
   const [html, setHtml] = useLocalStorage('html', '')
   const [css, setCss] = useLocalStorage('css', '')
   const [js, setJs] = useLocalStorage('js', '')
   const [srcDoc, setSrcDoc] = useState('')
 
+  function refreshHandler(){
+    localStorage.clear()
+    window.location.reload(false)
+  }
+  
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSrcDoc(`
@@ -25,8 +29,10 @@ function App() {
 
   return (
     <>
-      <div className="pane top-pane">
-        
+    <div className='center'>
+      <button id='image' onClick={()=>refreshHandler()}></button>
+    </div>
+    <div className="pane top-pane">
         <Editor
           language="xml"
           displayName="HTML"

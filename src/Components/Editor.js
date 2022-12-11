@@ -24,6 +24,7 @@ export default function Editor(props) {
   return (
     <div className={`editor-container ${open ? '' : 'collapsed'}`}>
       <div className="editor-title">
+      <button id='reloadBtn'></button>
         {displayName}
         <button
           type="button"

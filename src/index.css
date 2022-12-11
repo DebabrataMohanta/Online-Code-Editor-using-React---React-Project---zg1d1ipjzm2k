@@ -69,6 +69,23 @@ code {
 .flex-parent{
    display: flex;
 }
-.jc-center{
+
+.center{
+  display:flex;
   justify-content: center;
+}
+#image{
+  width: 5%;
+  height: 35px;
+  background-size: 100% 100%;
+  border:none;
+  background-image: url(https://e7.pngegg.com/pngimages/135/924/png-clipart-computer-icons-arrow-symbol-reload-arrows-blue-angle-thumbnail.png);
+}
+#reloadBtn{
+  width: 5%;
+  height: 20px;
+  background-size: 100% 100%;
+  border: none;
+  background-image: url(https://e7.pngegg.com/pngimages/135/924/png-clipart-computer-icons-arrow-symbol-reload-arrows-blue-angle-thumbnail.png);
+  visibility: hidden;
 }
