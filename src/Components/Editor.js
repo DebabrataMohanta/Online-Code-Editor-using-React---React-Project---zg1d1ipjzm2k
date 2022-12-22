@@ -6,7 +6,7 @@ import 'codemirror/mode/javascript/javascript'
 import 'codemirror/mode/css/css'
 import { Controlled as ControlledEditor } from 'react-codemirror2'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCompressAlt, faExpandAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCompressAlt, faExpandAlt  } from '@fortawesome/free-solid-svg-icons'
 
 export default function Editor(props) {
   const {
@@ -24,7 +24,12 @@ export default function Editor(props) {
   return (
     <div className={`editor-container ${open ? '' : 'collapsed'}`}>
       <div className="editor-title">
-      <button id='reloadBtn'></button>
+      <button 
+      type='button' 
+      className='reload-btn'
+      onClick={()=> onChange("")}
+      >
+       <FontAwesomeIcon icon="fa-solid fa-rotate-right" /></button>
         {displayName}
         <button
           type="button"

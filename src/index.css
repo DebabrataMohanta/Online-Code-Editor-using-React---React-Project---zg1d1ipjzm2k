@@ -46,6 +46,7 @@ code {
   cursor: pointer;
 }
 
+
 .editor-title {
   display: flex;
   justify-content: space-between;
@@ -81,11 +82,11 @@ code {
   border:none;
   background-image: url(https://e7.pngegg.com/pngimages/135/924/png-clipart-computer-icons-arrow-symbol-reload-arrows-blue-angle-thumbnail.png);
 }
-#reloadBtn{
+.reload-btn{
   width: 5%;
   height: 20px;
   background-size: 100% 100%;
   border: none;
   background-image: url(https://e7.pngegg.com/pngimages/135/924/png-clipart-computer-icons-arrow-symbol-reload-arrows-blue-angle-thumbnail.png);
-  visibility: hidden;
-}
+  
+} 

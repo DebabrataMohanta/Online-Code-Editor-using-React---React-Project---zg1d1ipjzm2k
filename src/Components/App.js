@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Editor from './Editor'
 import useLocalStorage from '../hooks/useLocalStorage'
 
+
 function App() {
   const [html, setHtml] = useLocalStorage('html', '')
   const [css, setCss] = useLocalStorage('css', '')
@@ -54,10 +55,11 @@ function App() {
       </div>
       <div className="pane">
         <iframe
+          name='result'
           srcDoc={srcDoc}
           title="output"
-          sandbox="allow-scripts"
-          frameBorder="0"
+          sandbox="allow-scripts allow-modals allow-popups"
+          frameborder="0"
           width="100%"
           height="100%"
         />
